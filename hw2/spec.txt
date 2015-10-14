@@ -1,1 +1,23 @@
-Please see course website, there're figures there ...
+Task 1: Plot general regular stars
+
+(a) 試寫一函數 regGeneralStar(n, k)，其功能為畫出一個圓心在 (0, 0)、半徑為 1 的圓，並在圓內畫出一個內接星形，其中一頂點位於 1 + 0 * i（複數表示法），下一頂點則位於 exp(i * 2 * pi * k / n)，依此類推。
+
+(b) Please try the following code to show some animation:
+
+    for i=1:1000
+        regGeneralStar(79, i);
+        drawnow
+    end
+
+    Please convert the animation into an animated gif file, using any resources you can find over the internet.
+
+Task 2: Plot and annotate local maxima: In this exercise, you are going to identify and annotate local maxima.
+
+(a) Plot a sine wave as follows:
+
+    t=0:0.1:4*pi;
+    y=sin(t)+rand(1, length(t));
+    plot(t, y, '.-');
+
+(b) Put a circle at each local maximum.
+(c) Use the command "text" to annotate each local maximum.
