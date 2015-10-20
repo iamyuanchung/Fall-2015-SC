@@ -6,4 +6,4 @@ plot(exp(j * theta), 'color', 'r'); hold on;
 
 % plot the polygon
 phi = 0: (2 * pi / n * k): (k * 2 * pi);
-plot(exp(j * phi), 'color', 'b', 'marker', 'o');
+plot(exp(j * phi), 'color', 'b', 'marker', 'o'); hold off;
