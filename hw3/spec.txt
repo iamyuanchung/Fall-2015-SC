@@ -1,0 +1,25 @@
+Chapter 9, Problem 9: Sorting vectors
+
+For a given vector x, we can sort its element using the "sort" command:
+
+    >> [x2, index] = sort(x);
+
+The sorted vector x2 is actually equal to x(index). Write a function "sortInv" that returns x from given x2 and index, that is:
+
+    x = sortInv(x2, index);
+
+ To test your function, try the following script and the value of z should be 1:
+
+     x = round(100 * rand(1, 100));
+     [x2, index] = sort(x);
+     x3 = sortInv(x2, index);
+     z = isequal(x, x3)
+
+(Hint: You can use "sort" command to create the function, which can be as short as two major lines of statements in the function body.)
+
+
+Chapter 11, Problem 5: Reorganize a 3D array
+
+A true-color image (such as a jpg file) of size m x n can be represented as a 3-dimensional array of size m x n x 3, where each layer (or page) is the pixel intensity of R(red), G(green), and B(blue), respectively.
+
+For more details, please refer to the course website ...
