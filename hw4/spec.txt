@@ -1,0 +1,3 @@
+Use k-means clustering on blocks of images for image compression: Repeat the previous exercise but use blocks of different sizes for k-means clustering.
+
+- 8x8 blocks (64 pixels, so the dimension is 3*64=192 for k-means clustering).
