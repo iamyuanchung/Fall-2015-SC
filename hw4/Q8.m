@@ -39,6 +39,7 @@ for i = 1:maxI
     imwrite(X_recover / 255, strcat('annie19980405_', num2str(i), '.jpg'));
 
     % compute the compression ratio
-    ratio = m * n * p * 8 / (m / b * n / b * 8 + centerNum * m / b * n / b * p * 3);
-    fprintf('Compression ratio = %f\n', ratio);
+    % ratio = m * n * p * 8 / (m / b * n / b * 8 + centerNum * m / b * n / b * p * 3);
+    ratio = m * n * p / (centerNum * b * b * p + m / b * n / b);
+    fprintf('When centerNum = %d, compression ratio = %f\n', centerNum, ratio);
 end
