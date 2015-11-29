@@ -3,9 +3,10 @@ function [sse, theta] = ellipseFit(data, showPlot)
 x = data(:, 1);
 y = data(:, 2);
 center_init = [mean(x), mean(y)];
-[sse, radius] = sseOfEllipseFit(center_init, data);
+
 
 [center, sse] = fminsearch(@(center) errorMeasure(center, data, radius), center_init);
+[sse, radius] = sseOfEllipseFit(center_init, data);
 
 theta = [center(1), center(2), radius(1), radius(2)];
 
