@@ -1,5 +1,5 @@
-waveFile='csNthu.wav';
-au = myAudioRead('high.m4a');
+waveFile = 'low.m4a';
+au = myAudioRead(waveFile);
 y = au.signal;
 fs = au.fs;
 index1 = 11050;
@@ -12,10 +12,10 @@ title(waveFile);
 line(index1 * [1 1], [-1 1], 'color', 'r');
 line(index2 * [1 1], [-1 1], 'color', 'r');
 subplot(2, 1, 2); plot(frame, '.-'); grid on
-point = [75, 477];
+point = [175, 358];
 line(point, frame(point), 'marker', 'o', 'color', 'red');
 
-periodCount = 3;
+periodCount = 2;
 fp = ((point(2) - point(1)) / periodCount) / fs;    % fundamental period
 ff = fs / ((point(2) - point(1)) / periodCount);	% fundamental frequency
 pitch = 69 + 12 * log2(ff / 440);
