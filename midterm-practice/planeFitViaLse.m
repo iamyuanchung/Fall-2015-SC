@@ -6,6 +6,6 @@ d = d - 1;
 y = X(3, :)';
 X = [ones(n, 1) X(1:2, :)'];
 
-size(y)
+size(y);
 
 theta = X \ y;
