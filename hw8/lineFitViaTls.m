@@ -6,4 +6,5 @@ function coef = lineFitViaTls(data)
 [A2, eigVec, eigVal] = pca(data);
 [eigVal_sorted, eigVal_index] = sort(eigVal);
 coef = eigVec(:, eigVal_index(end - 1));
-coef = [coef; -data(:, 2)' * coef];
+data_mean = mean(data')';
+coef = [coef; -data_mean' * coef];
