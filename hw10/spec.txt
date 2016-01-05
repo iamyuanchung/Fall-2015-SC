@@ -2,5 +2,8 @@ Write a function myPageRank.m to return the pagerank of a given connectivity mat
 
 pageRank = myPageRank(G, p),
 
-where G is the connectivity matrix and p is the probability of following a link in a page.
-Note that you can only use the power method to achieve this exercise.
+where G is the connectivity matrix and p is the probability of following a link in a page. Note that you can only use the power method to achieve this exercise. More specs are as follows:
+    - Note that you can only use the power method to implement this function.
+    - The initial guess of the page rank should be a probability vector of uniform distribution.
+    - The maximum iteration count is 1000.
+    - The iteration stops whenever max(abs(pr-prprev)) ≤ eps, where pr is the current page rank and prprev is the page rank obtained at previous iteration.
