@@ -1,0 +1,6 @@
+Write a function myPageRank.m to return the pagerank of a given connectivity matrix G and the probability of following a link in a page. The usage of the function is like this:
+
+pageRank = myPageRank(G, p),
+
+where G is the connectivity matrix and p is the probability of following a link in a page.
+Note that you can only use the power method to achieve this exercise.
